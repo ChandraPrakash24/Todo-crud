@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: Verdana, Tahoma, sans-serif;
+    background-image: linear-gradient(#60efff, #357bed);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.container {
+    width: 370px;
+    padding: 12px;
+    border-radius: 6px;
+    background-color: white;
+    box-shadow: 0 0 0 2px white;
+    margin: 114px 0;
+}
+#todoTitle {
+    font-size: 32px;
+    font-weight: bold;
+    padding: 15px 6px;
+}
+/* Task Input */
+.enterTask {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px;
+}
+#taskInput {
+    width: 85%;
+    height: 40px;
+    padding: 16px;
+    margin: 4px;
+    border: 1.5px solid gray;
+    border-radius: 4px;
+    outline: transparent;
+    color: rgb(32, 28, 28);
+    background-color: white;
+    font-size: 18px;
+    letter-spacing: .8px;
+}
+#addSvg {
+    width: 40px;
+    height: 40px;
+    padding: 6px;
+    margin: 4px;
+    fill: white;
+    background-color: #8E49E9;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/* Task length error */
+.task-length-error {
+    color: red;
+    margin-left: 8px;
+    margin-bottom: 12px;
+}
+/* Filter Tasks */
+.filter-tasks {
+    padding: 4px 8px;
+    margin-bottom: 8px;
+}
+#filter-list {
+    font-size: 18px;
+    border: transparent;
+    outline: transparent;
+    border-radius: 4px;
+    padding: 4px;
+    color: white;
+    background-color: #2D3E50;
+    cursor: pointer;
+}
+/* Tasks */
+.task-container {
+    padding: 0 6px;
+}
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    text-align: center;
+    color:rgb(32, 28, 28);
+}
+.pendingSvg {
+    width: 30px;
+    height: 30px;
+    padding-top: 7px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.taskText {
+    width: 270px;
+    word-wrap: break-word;
+    line-height: 1.4rem;
+    text-align: left;
+}
+.editSvg {
+    width: 30px;
+    height: 30px;
+    padding-top: 7px;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.deleteSvg {
+    width: 30px;
+    height: 30px;
+    padding-top: 7px;
+    font-size: 18px;
+    border-radius: 4px;
+    color: white;
+    background-color: red;
+    cursor: pointer;
+}
+/* Clear All Task */
+.clearAllTask {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0 0;
+    margin: 10px 0 0;
+    border-top: 1px solid black;
+}
+#clearAllTaskText {
+    color: rgb(32, 28, 28);
+    letter-spacing: 0.8px;
+    padding: 5px 4px;
+}
+#clearAllTaskBtn {
+    width: 100px;
+    padding: 8px;
+    color: white;
+    background-color: #8E49E9;
+    border-radius: 4px;
+    white-space: nowrap;
+    font-size: 18px;
+    border: 1px solid white;
+    outline: transparent;
+    cursor: pointer;
+}
+.footer{
+  position: relative;
+  bottom: 60px;
+}
+/* Responsive Design */
+@media screen and (max-width: 450px) {
+    .container {
+        width: 90vw;
+        padding: 8px;
+    }
+    .taskText {
+        width: 70vw;
+    }
+    #clearAllTaskBtn {
+        width: 30vw;
+    }
+}
+/* Completed Task Format */
+.task.checked > .pendingSvg {
+    color: gray;
+}
+.task.checked > .taskText {
+    width: 83%;
+    color: gray;
+    text-decoration: line-through;
+}
+.task.checked > .editSvg {
+    display: none;
+}
+/* No Task Message */
+.completed {
+    text-align: center;
+}
