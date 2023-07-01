@@ -2,11 +2,9 @@
 
 ![Screenshot (96)](https://github.com/ChandraPrakash24/Todo-crud/assets/107044253/dc6fbce9-dd9b-45ea-8044-dffd3e8b5a2c)
 
-RUN: https://chandraprakash24.github.io/Todo-crud/
 
 This crud web app is devloped durning my internship at __iCode__.
-This is a Todo web application built using HTML, CSS, and Vanilla JavaScript. It provides a simple and intuitive interface for managing your tasks. The app includes several features to enhance your productivity and help you stay organized. Checkout here: https://ChandraPrakash24.github.io/Todo-JavaScript/ 
-
+This is a Todo web application built using HTML, CSS, and Vanilla JavaScript. It provides a simple and intuitive interface for managing your tasks. The app includes several features to enhance your productivity and help you stay organized. Checkout here: https://chandraprakash24.github.io/Todo-crud/
 ## Features
 
 - **Local Storage**: The app stores the Todo data in the browser's local storage, ensuring that your tasks are preserved even if you refresh the page or close the browser.
